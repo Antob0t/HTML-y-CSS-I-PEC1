@@ -1,0 +1,17 @@
+{
+  "name": "izakaya-shinobi-pec",
+  "private": true,
+  "version": "1.0.0",
+  "source": "src/**/index.html",
+  "browserslist": "> 0.03%, last 10 years, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "autoprefixer": "^10.4.27",
+    "parcel": "^2.14.0",
+    "posthtml-include": "^2.0.1"
+  }
+}
