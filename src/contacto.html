@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sando Sushi - Contacta con nosotros</title>
+    <meta name="description" content="Contacta con nosotros y descubre el sabor auténtico del sushi en Sando Sushi, el mejor restaurante de sushi en Madrid.">
+    <meta name="keywords" content="sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
+    <meta name="author" content="Antolín Murcia">
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+  </head>
+  <body>
+      <include src="./layouts/_nav.html"></include>
+    <main>
+        <section class="contacto">
+    <div class="contacto__contenedor">
+        <h2 class="contacto__titulo">Hablemos de Sushi</h2>
+        <p class="contacto__subtitulo">Cuéntanos tus dudas o haz tu reserva personalizada.</p>
+        <form class="contacto__formulario" method="post" data-netlify="true">
+            <div class="contacto__grid">
+                <div class="contacto__grupo">
+                    <label for="nombre" class="contacto__label">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Itamae San" autocomplete="name" required>
+                </div>
+                <div class="contacto__grupo">
+                    <label for="telefono" class="contacto__label">Teléfono de contacto</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+34 000000000" autocomplete="tel" required>
+                </div>
+            </div>
+            <div class="contacto__grupo">
+                <label for="email" class="contacto__label">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" autocomplete="email" required>
+            </div>
+            <div class="contacto__grupo">
+                <label for="mensaje" class="contacto__label">¿En qué podemos ayudarte?</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="contacto__boton">Enviar</button>
+        </form>
+    </div>
+</section>
+    </main>
+  </body>
+  <include src="./layouts/_footer.html"></include>
+</html>

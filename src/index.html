@@ -3,21 +3,62 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocina Nikkei | Recetas Japonesa Tradicional</title>
-    <meta name="description" content="">
+    <title>Sando Sushi - Tu restaurante de sushi en Madrid</title>
+    <meta name="description" content="Descubre el sabor auténtico del sushi en Sando Sushi, el mejor restaurante de sushi en Madrid.">
+    <meta name="keywords" content="sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
+    <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="./assets/styles/main.scss">
   </head>
   <body>
-      <include src="src/layouts/_nav.html"></include>
+      <include src="./layouts/_nav.html"></include>
     <main>
       <div class="encabezado">
-        <h1 class="encabezado__titulo">Cocina Nikkei: El Arte de la Receta Japonesa</h1>
-        <p class="encabezado__parrafo">Bienvenidos a vuestro rincón de aprendizaje sobre la gastronomía nipona. Aquí encontrarás desde los caldos más reconfortantes hasta las técnicas milenarias del arroz.</p>
+        <h1 class="encabezado__titulo">Sando</span></h1>
+        <figure class="encabezado__imagen">
+          <img src="./assets/images/portada.png" alt="Imagen de sushi">
+        </figure>
+        <h1 class="encabezado_subtitulo">Sushi</h1>
       </div>
-      <section class="receta1">
-        
+      <section class="carta">
+        <h2 class="carta__titulo">Nuestra Carta</h2>
+        <p class="carta__descripcion">En Sando Sushi, ofrecemos una amplia variedad de platos de sushi, desde los clásicos nigiri y maki hasta nuestras especialidades exclusivas. Cada plato está preparado con ingredientes frescos y de alta calidad para garantizar una experiencia culinaria excepcional.</p>
+        <div class="carta__slider">
+          <figure class="carta__plato">
+            <img src="./assets/images/plato1.png" alt="Imagen de un chico sujerando un plato de sando dragon roll con palillos asiáticos">
+            <figcaption class="carta__descripcion--plato"><a href="/src/det1.html">Sando Dragon Roll</a></figcaption>
+          </figure>
+          <figure class="carta__plato">
+            <img src="./assets/images/plato2.png" alt="Imagen de un plato de futomaki vegetal con aguacate, pepino y zanahoria encima de una silla roja">
+            <figcaption class="carta__descripcion--plato"><a href="/src/det2.html">Futomaki Vegetal</a></figcaption>
+          </figure>
+          <figure class="carta__plato">
+            <img src="./assets/images/plato3.png" alt="Imagen de una chica sujetando un plato de temaki de langostino en tempura con palillos asiáticos">
+            <figcaption class="carta__descripcion--plato"><a href="/src/det3.html">Temaki de Langostino en Tempura</a></figcaption>
+          </figure>
+        </div>    
+      </section>
+      <section class="contacto">
+        <h2 class="contacto__titulo">Restaurante</h2>
+        <dl class="contacto__detalles">
+          <dt class="contacto__titulo">Dirección:</dt>
+          <dd class="contacto__direccion">Calle Fuencarral, 123, Madrid</dd>
+          <dd class="contacto__boton"><a href="https://maps.google.com/?q=Calle+Fuencarral,+123,+Madrid" target="_blank">Ver en mapa</a></dd>
+          <dt class="contacto__titulo">Teléfono:</dt>
+          <dd class="contacto__telefono"><a href="tel:91480000">91480000</a></dd>
+          <dt class="contacto__titulo">Email:</dt>
+          <dd class="contacto__email"><a href="mailto:info@sandosushi.com">info@sandosushi.com</a></dd>
+        </dl>
+        <dl class="contacto__horario">
+          <dt class="contacto__titulo">Horario:</dt>
+          <dd class="contacto__horario-detalles">Lunes a Domingo: 12:00 - 23:00</dd>
+          <dt class="contacto__titulo">Cerrado:</dt>
+          <dd class="contacto__cerrado-detalles">Lunes</dd>
+        </dl>
+        <figure class="contacto__restaurante">
+          <img src="./assets/images/restaurante.png" alt="Imagen del restaurante">
+        </figure>
       </section>
     </main>
-    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
+  <include src="./layouts/_footer.html"></include>
 </html>
