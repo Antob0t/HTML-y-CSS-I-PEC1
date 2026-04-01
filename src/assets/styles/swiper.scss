@@ -1,13 +1,22 @@
-@use "./_variables.scss";
+@use "./_variables.scss" as *;
 
+:root{
+  --swiper-pagination-color: #ff1500;
+  --swiper-pagination-bullet-inactive-color: #ff8c00;
+}
 
 .swiper {
-  width: 100%;
+  width: 450px;
   height: 450px;
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
-
+  box-shadow: 1px 2px 8px $color-text;
+  @media screen and (min-width: $mq-tablet ) {
+     width: 100%;
+     max-width: 600px;
+     height: 600px;
+    }
   .swiper-slide {
     display: flex;
     justify-content: center;
@@ -21,7 +30,10 @@
   }
 }
 .swiper-button-next, .swiper-button-prev {
-  color: #bc002d;
+  color: $color-primary;
   top: 50%;
   transform: translateY(-50%);
+}
+.swiper-pagination{
+  color: $color-primary;
 }

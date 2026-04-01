@@ -1,0 +1,137 @@
+@use "./_variables.scss" as *;
+
+.detalle{
+    margin-top: 20px ;
+    padding: 0px;
+    &__encabezado{
+        display: flex;
+        border-bottom: 2px solid $color-text;
+    }
+    &__titulo{
+        font-family: $font-title;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__retroceso{
+        padding: 0.5rem 1rem;
+        font-size: 3rem;
+        color: $color-primary;
+        font-weight: $font-weight-title;
+    }
+    &__enlace{
+        color: $color-primary;
+        text-decoration: none;
+    }
+    &__fotos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    &__descripcion{
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__texto{
+        padding: 1rem 3rem;
+        color: $color-text;
+    }
+    &__ingredientes{
+        list-style: none;
+        padding: 1rem 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: $color-text;
+        font-weight: $font-weight-title;
+    }
+    &__ingrediente{
+        font-style: bold;
+        ::after{
+            content: "•";
+            color: $color-primary;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+        &--ultimo{
+            ::after{
+            content: none;
+            }
+        }
+    }
+    &__precio{
+        width: 100%;
+        font-family: $font-title;
+        font-weight: $font-weight-title;
+        font-size: 2rem;
+        color: $color-primary;
+        margin-top: 1rem;
+        list-style: none;
+        display: flex;
+        justify-content: end;
+    }
+    &__historia--titulo, 
+    &__alergenos--titulo, 
+    &__preparacion--titulo {
+        padding: 1rem 2rem;
+        font-family: $font-title;
+        font-size: $font-size-subtitle;
+        color: $color-primary;
+        text-transform: uppercase;
+        margin-left: 60px;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $color-primary;
+        width: fit-content;
+        @media screen and (min-width: $mq-tablet ) {
+           margin-left: 300px;
+        }
+    }
+    &__historia--texto, 
+    &__preparacion--texto{
+        padding: 1rem 3rem;
+        color: $color-text;
+        @media screen and (min-width: $mq-tablet ) {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &__alergenolista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 1.5rem;
+        list-style: none;
+        padding: 2rem;
+        font-size: 3rem;
+        color: $color-text;
+    }
+    &__alergeno{
+            &:hover{
+            transform: scale(1.2);
+            color: $color-primary;
+        }
+    }
+    &__video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba($color-text, 0.1);
+        margin: 50px auto;
+        margin-bottom: 100px;
+    }
+
+}

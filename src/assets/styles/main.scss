@@ -1,4 +1,23 @@
-@use "./_variables.scss";
+@use "./_variables.scss" as *;
 @use "./_dependencias.scss";
 
 @use "./swiper.scss";
+
+@use "./nav.scss";
+@use "./footer.scss";
+@use "./categoria.scss";
+@use "./detalle.scss";
+@use "./contacto.scss";
+@use "./link.scss";
+@use "./index.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-body;
+  background-color: $color-background;
+  color: $color-primary;
+}

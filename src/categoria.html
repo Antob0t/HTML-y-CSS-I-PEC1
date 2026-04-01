@@ -8,191 +8,217 @@
     <meta name="keywords" content="carta de sushi, menú de sushi, platos de sushi, Sando Sushi, restaurante de sushi en Madrid">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="/src/assets/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
 <include src="layouts/_nav.html"></include>
-    <main>
-        <div class="categoria__titulo">
-            <h1 class="categoria__nombre">MENÚ</h1>
+    <main class="carta">
+        <div class="categoria__izquierda">
+            <div class="categoria__retroceso">
+                <a class="categoria__enlace" href="/src/index.html"><i class="fa-solid fa-angle-left"></i></a>
+            </div>
+            <h1 class="categoria__titulo">MENÚ</h1>
+            <div class="categoria__espaciador"></div>
         </div>
-        <div class="retroceso">
-            <a class="retroceso__enlace" href="/src/index.html">&lt;</a>
-        </div>
-        <section class="carta">
+        <section class="carta_derecha">
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta1.png" alt="Imagen deSando Dragon Roll">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
-                        <li class="carta__etiqueta">Uramaki</li>
-                        <li class="carta__etiqueta">Especialidad de la casa</li>
+                            <li class="carta__etiqueta">Uramaki</li>
+                            <li class="carta__etiqueta carta__etiqueta--ultima">Especialidad de la casa</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta1.png" alt="Imagen deSando Dragon Roll">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Sando Dragon Roll</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, langostino, aguacate, sesamo, panko.</p></li>
                         <li class="carta__precio"><p>12€ (8 ud)</p></li>
-                        <li class="carta__detalles"><a href="/src/det1.html">Ver detalles</a></li>
+                        <li class="carta__detalles"><a class="carta__detalles--enlace" href="/src/det1.html">Ver detalles</a></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta2.png" alt="Imagen de Futomaki Vegetal">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
-                        <li class="carta__etiqueta">Futomaki</li>
-                        <li class="carta__etiqueta">Vegetariano</li>
+                            <li class="carta__etiqueta">Futomaki</li>
+                            <li class="carta__etiqueta carta__etiqueta--ultima">Vegetariano</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta2.png" alt="Imagen de Futomaki Vegetal">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Futomaki Vegetal</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, pepino, zanahoria, col, seta shitake, salsa de soja.</p></li>
                         <li class="carta__precio"><p>9€ (8 ud)</p></li>
-                        <li class="carta__detalles"><a href="/src/det2.html">Ver detalles</a></li>
+                        <li class="carta__detalles"><a class="carta__detalles--enlace" href="/src/det2.html">Ver detalles</a></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta3.png" alt="Imagen de Temaki de Langostino en Tempura">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Temaki</li>
-                        <li class="carta__etiqueta">De temporada</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">De temporada</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta3.png" alt="Imagen de Temaki de Langostino en Tempura">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Temaki de Langostino en Tempura</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, langostino en tempura, mayonesa picante, salsa de soja.</p></li>
                         <li class="carta__precio"><p>5€ (3 ud)</p></li>
-                        <li class="carta__detalles"><a href="/src/det3.html">Ver detalles</a></li>
+                        <li class="carta__detalles"><a class="carta__detalles--enlace" href="/src/det3.html">Ver detalles</a></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta4.png" alt="Imagen de California Roll">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Uramaki</li>
-                        <li class="carta__etiqueta">Clásico</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">Clásico</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta4.png" alt="Imagen de California Roll">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">California Roll</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, shurimi, mayonesa, aguacate, queso crema, salsa de soja.</p></li>
                         <li class="carta__precio"><p>8€ (8 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta5.png" alt="Imagen de Roll de aguacate y cangrejo">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
-                        <li class="carta__etiqueta">Uramaki</li>
-                        <li class="carta__etiqueta">Clásico</li>
+                            <li class="carta__etiqueta">Uramaki</li>
+                            <li class="carta__etiqueta carta__etiqueta--ultima">Clásico</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta5.png" alt="Imagen de Roll de aguacate y cangrejo">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Roll de aguacate y cangrejo</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, shurimi, mayonesa, aguacate, pepino, salsa de soja.</p></li>
                         <li class="carta__precio"><p>6€ (8 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta6.png" alt="Imagen de Maki de atún picante">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Maki</li>
-                        <li class="carta__etiqueta">Picante</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">Picante</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta6.png" alt="Imagen de Maki de atún picante">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Maki de atún picante</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, atún fresco, salsa Sando picante, salsa de soja.</p></li>
                         <li class="carta__precio"><p>6€ (8 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta7.png" alt="Imagen de Nigiri de salmón fresco">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Nigiri</li>
-                        <li class="carta__etiqueta">Tradicional</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">Tradicional</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta7.png" alt="Imagen de Nigiri de salmón fresco">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Nigiri de salmón fresco</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, salmón fresco, huevas de salmón, salsa de soja.</p></li>
                         <li class="carta__precio"><p>5€ (6 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta8.png" alt="Imagen de Nigiri de Anguila a la parrilla">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Nigiri</li>
-                        <li class="carta__etiqueta">Especialidad</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">Especialidad</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta8.png" alt="Imagen de Nigiri de Anguila a la parrilla">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Nigiri de Anguila a la parrilla</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, anguila a la parrilla, salsa especial Sando, huevas, cebollino.</p></li>
                         <li class="carta__precio"><p>7€ (6 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta9.png" alt="Imagen de Inari Sushi">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
-                        <li class="carta__etiqueta">Inari</li>
-                        <li class="carta__etiqueta">Tradicional</li>
+                            <li class="carta__etiqueta">Inari</li>
+                            <li class="carta__etiqueta carta__etiqueta--ultima">Tradicional</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta9.png" alt="Imagen de Inari Sushi">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Inari Sushi</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, tofu relleno de arroz, sesamo.</p></li>
                         <li class="carta__precio"><p>3€ (3 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta10.png" alt="Imagen de Gunkan de Huevas de Salmón">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Gunkan</li>
-                        <li class="carta__etiqueta">Tradicional</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">Tradicional</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta10.png" alt="Imagen de Gunkan de Huevas de Salmón">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Gunkan de Huevas de Salmón</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Arroz, alga nori, huevas de salmón.</p></li>
                         <li class="carta__precio"><p>6€ (3 ud)</p></li>
                     </ul>
                 </div>
             </div>
             <div class="carta__producto">
-                <figure class="carta__imagen">
-                    <img src="/src/assets/images/carta11.png" alt="Imagen de Sashimi de Hamachi">
-                </figure>
-                <div class="carta__descripcion">
+                <div class="carta__destacado">
                     <ul class="carta__etiquetas">
                         <li class="carta__etiqueta">Sashimi</li>
-                        <li class="carta__etiqueta">Tradicional</li>
+                        <li class="carta__etiqueta carta__etiqueta--ultima">Tradicional</li>
                     </ul>
+                    <figure class="carta__figura">
+                        <img class="carta__imagen" src="/src/assets/images/carta11.png" alt="Imagen de Sashimi de Hamachi">
+                    </figure>
+                </div>
+                <div class="carta__descripcion">
                     <h2 class="carta__nombre">Sashimi de Hamachi</h2>
-                    <ul>
+                    <ul class="carta__lista">
                         <li class="carta__ingrediente"><p>Hamachi fresco, salsa de soja, wasabi.</p></li>
                         <li class="carta__precio"><p>6€ (6 ud)</p></li>
                     </ul>

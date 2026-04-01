@@ -1,0 +1,230 @@
+@use "./_variables.scss" as *;
+
+.categoria{
+
+    &__izquierda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: $color-background;
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: $color-background;
+        padding-top: 30px;
+        width: 100%;
+        @media screen and (min-width: $mq-tablet) {
+            flex: 0 0 150px;
+            position: sticky;
+            top: 2rem;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0;
+            margin-top: 2rem; 
+        }
+    }
+    &__titulo{
+        font-family: $font-title;
+        font-size: $font-size-title;
+        font-weight: $font-weight-title;
+        color: $color-primary;
+        @media screen and (min-width: $mq-tablet) {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+    }
+    &__retroceso{
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        flex: 1;
+    }
+    &__espaciador{
+        flex: 1;
+    }
+    &__enlace{
+        font-size: 3rem;
+        color: $color-primary;
+        text-decoration: none;
+        font-weight: $font-weight-body;
+    }
+}
+.carta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    font-family: $font-body;
+
+    @media screen and (min-width: $mq-tablet) {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    &__derecha{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        @media screen and (min-width: $mq-tablet) {
+            flex: 1;                
+        }
+    }
+    &__destacado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width: $mq-tablet){ 
+            margin-right: 30px;
+            padding: 2rem
+        }
+    }
+    &__producto {
+        display: flex;
+        align-items: center;
+        background-color: $color-background;
+        padding: 1.5rem;
+        border: 2px solid $color-primary;
+        @media screen and (max-width: $mq-tablet) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+    }
+
+    &__figura {
+        flex: 0 0 300px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: $color-primary;
+        border-radius: 50%;
+        overflow: hidden;
+        @media screen and (min-width: $mq-tablet) {
+           padding: 1rem;
+        }
+    }
+    &__imagen{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+        @media screen and (min-width: $mq-tablet) {
+        }
+
+    }
+
+    &__descripcion {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        @media screen and (min-width: $mq-tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+
+    &__etiquetas {
+        list-style: none;
+        padding: 1rem 0;
+        display: flex;
+        margin-bottom: 0.5rem;
+        @media screen and (min-width: $mq-tablet) {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    &__etiqueta {
+        background-color: $color-background;
+        color: $color-primary;
+        padding: 4px 0;
+        border-radius: 50px;
+        font-family: $font-title;
+        font-size: 0.9em;
+        font-weight: $font-weight-title;
+        display: flex;
+        align-items: center;
+
+        &--ultima::before {
+            content: "•";
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    }
+
+    &__nombre {
+        font-family: $font-title;
+        font-size: $font-size-subtitle;
+        margin: 0;
+        color: $color-text;
+        padding: 2rem 0;
+        @media screen and (min-width: $mq-tablet) {
+            padding: 1rem 0;
+        }
+    }
+
+    &__lista {
+        list-style: none;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+
+    &__ingrediente {
+        font-size: 0.9rem;
+        color: $color-text;
+    }
+
+    &__precio{
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $color-primary;
+        margin-top: 0.5rem;
+        margin-bottom: 20px;
+        @media screen and (min-width: $mq-tablet) {
+            padding: 1rem 0;
+            margin-bottom: 5px;
+            text-align: end;
+        }
+    }
+    &__detalles{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color-primary;
+        border-radius: 20px;
+        @media screen and (min-width: $mq-tablet) {
+            border-radius: 30px;
+        }
+        :hover{
+            background-color: $color-primary;
+            color: $color-background;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        &--enlace{
+            text-decoration: none;
+            color: $color-primary;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+            border-radius:20px;
+            
+        }
+    }
+}

@@ -8,54 +8,56 @@
     <meta name="keywords" content="sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="./assets/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   <body>
       <include src="./layouts/_nav.html"></include>
     <main>
       <div class="encabezado">
-        <h1 class="encabezado__titulo">Sando</span></h1>
-        <figure class="encabezado__imagen">
-          <img src="./assets/images/portada.png" alt="Imagen de sushi">
+        <h1 class="encabezado__titulo">SAND<span class="encabezado__titulo--o">O</span></h1>
+        <figure class="encabezado__figura">
+          <img class="encabezado__imagen" src="./assets/images/portada.png" alt="Imagen de sushi">
         </figure>
-        <h1 class="encabezado_subtitulo">Sushi</h1>
+        <h1 class="encabezado__subtitulo">sushi</h1>
       </div>
-      <section class="carta">
-        <h2 class="carta__titulo">Nuestra Carta</h2>
-        <p class="carta__descripcion">En Sando Sushi, ofrecemos una amplia variedad de platos de sushi, desde los clásicos nigiri y maki hasta nuestras especialidades exclusivas. Cada plato está preparado con ingredientes frescos y de alta calidad para garantizar una experiencia culinaria excepcional.</p>
-        <div class="carta__slider">
-          <figure class="carta__plato">
-            <img src="./assets/images/plato1.png" alt="Imagen de un chico sujerando un plato de sando dragon roll con palillos asiáticos">
-            <figcaption class="carta__descripcion--plato"><a href="/src/det1.html">Sando Dragon Roll</a></figcaption>
+      <section class="destacados">
+        <h2 class="destacados__titulo">Nuestros destacados</h2>
+        <p class="destacados__descripcion">En Sando Sushi, ofrecemos una amplia variedad de platos de sushi, desde los clásicos nigiri y maki hasta nuestras especialidades exclusivas. Cada plato está preparado con ingredientes frescos y de alta calidad para garantizar una experiencia culinaria excepcional.</p>
+        <div class="destacados__galeria">
+          <figure class="destacados__plato">
+            <img class="destacados__imagen" src="./assets/images/plato1.png" alt="Imagen de un chico sujerando un plato de sando dragon roll con palillos asiáticos">
+            <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det1.html">Sando Dragon Roll</a></figcaption>
           </figure>
-          <figure class="carta__plato">
-            <img src="./assets/images/plato2.png" alt="Imagen de un plato de futomaki vegetal con aguacate, pepino y zanahoria encima de una silla roja">
-            <figcaption class="carta__descripcion--plato"><a href="/src/det2.html">Futomaki Vegetal</a></figcaption>
+          <figure class="destacados__plato">
+            <img class="destacados__imagen" src="./assets/images/plato2.png" alt="Imagen de un plato de futomaki vegetal con aguacate, pepino y zanahoria encima de una silla roja">
+            <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det2.html">Futomaki Vegetal</a></figcaption>
           </figure>
-          <figure class="carta__plato">
-            <img src="./assets/images/plato3.png" alt="Imagen de una chica sujetando un plato de temaki de langostino en tempura con palillos asiáticos">
-            <figcaption class="carta__descripcion--plato"><a href="/src/det3.html">Temaki de Langostino en Tempura</a></figcaption>
+          <figure class="destacados__plato">
+            <img class="destacados__imagen" src="./assets/images/plato3.png" alt="Imagen de una chica sujetando un plato de temaki de langostino en tempura con palillos asiáticos">
+            <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det3.html">Temaki de Langostino</a></figcaption>
           </figure>
         </div>    
       </section>
       <section class="contacto">
-        <h2 class="contacto__titulo">Restaurante</h2>
-        <dl class="contacto__detalles">
-          <dt class="contacto__titulo">Dirección:</dt>
-          <dd class="contacto__direccion">Calle Fuencarral, 123, Madrid</dd>
-          <dd class="contacto__boton"><a href="https://maps.google.com/?q=Calle+Fuencarral,+123,+Madrid" target="_blank">Ver en mapa</a></dd>
-          <dt class="contacto__titulo">Teléfono:</dt>
-          <dd class="contacto__telefono"><a href="tel:91480000">91480000</a></dd>
-          <dt class="contacto__titulo">Email:</dt>
-          <dd class="contacto__email"><a href="mailto:info@sandosushi.com">info@sandosushi.com</a></dd>
-        </dl>
-        <dl class="contacto__horario">
-          <dt class="contacto__titulo">Horario:</dt>
-          <dd class="contacto__horario-detalles">Lunes a Domingo: 12:00 - 23:00</dd>
-          <dt class="contacto__titulo">Cerrado:</dt>
-          <dd class="contacto__cerrado-detalles">Lunes</dd>
-        </dl>
+          <dl class="contacto__detalles">
+            <h2 class="contacto__titulo">Restaurante</h2>
+            <dt class="contacto__subtitulo">Dirección:</dt>
+            <dd class="contacto__direccion">Calle Fuencarral, 123, Madrid</dd>
+            <dd class="contacto__boton"><a class="contacto__enlace" href="https://maps.google.com/?q=Calle+Fuencarral,+123,+Madrid" target="_blank">Ver en mapa</a></dd>
+            <dt class="contacto__subtitulo">Teléfono:</dt>
+            <dd class="contacto__telefono"><a class="contacto__enlace" href="tel:91480000">91480000</a></dd>
+            <dt class="contacto__subtitulo">Email:</dt>
+            <dd class="contacto__email"><a class="contacto__enlace" href="mailto:info@sandosushi.com">info@sandosushi.com</a></dd>
+            <dt class="contacto__subtitulo">Horario:</dt>
+            <dd class="contacto__horario"><u>Martes a Domingo</u>:<b> 12:00 - 23:00</b></dd>
+            <dt class="contacto__subtitulo">Cerrado:</dt>
+            <dd class="contacto__horario contacto__horario--cerrado">Lunes</dd>
+          </dl>
+        </div>
         <figure class="contacto__restaurante">
-          <img src="./assets/images/restaurante.png" alt="Imagen del restaurante">
+          <img class="contacto__imagen" src="./assets/images/restaurante.png" alt="Imagen del restaurante">
         </figure>
       </section>
     </main>

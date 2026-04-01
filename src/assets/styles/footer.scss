@@ -1,0 +1,120 @@
+@use "./_variables.scss" as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    background-color: $color-primary;
+    color: $color-background;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    
+    &__japon{
+        border-top: 2px solid $color-background;
+        width: 100%;
+        margin-top: 10px;
+    }
+    &__japones{
+        font-family: $font-body;
+        font-size: $font-size-title;
+        font-weight: $font-weight-body;
+        margin-bottom: 0.5rem;
+        margin-top: 20px;
+        
+        @media screen and (min-width: $mq-tablet ) {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+    &__contenedor{
+        @media screen and (min-width: $mq-tablet ) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+    &__textos{
+        @media screen and (min-width: $mq-tablet ) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+    &__nombre{
+        font-family: $font-title;
+        font-size: $font-size-subtitle;
+        font-weight: $font-weight-title;
+        margin-bottom: 1rem;
+        
+        @media screen and (min-width: $mq-tablet ) {
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    &__copyright{
+        font-family: $font-body;
+        font-size: $font-size-body;
+        font-weight: $font-weight-body;
+        margin-bottom: 0.5rem;
+        
+        @media screen and (min-width: $mq-tablet ) {
+            margin-bottom: 0;
+        }
+    }
+    &__universidad{
+        font-family: $font-body;
+        font-size: $font-size-body;
+        font-weight: $font-weight-body;
+        margin-bottom: 10px;
+    }
+    &__enlaces{
+        font-family: $font-title;
+        font-weight: $font-weight-title;
+        gap: 2rem;
+        margin-top: 1.5rem;
+        margin-inline: auto;
+        border: 3px solid $color-background;
+        padding: 5px 10px;
+        border-radius: 30px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: $color-background;
+            color: $color-primary;
+            transition: 0.3s ease-in-out;
+        }
+        @media screen and (min-width: $mq-tablet ) {
+            margin-top: 0;
+            width: 150px;
+            margin-inline: 0;
+        }
+        
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-background;
+        font-size: $font-size-body;
+        width: 100%;
+        @media screen and (min-width: $mq-tablet ) {
+            font-size: 1.2rem;
+            width: 100%;
+            
+        }
+            &:hover{
+            color: $color-primary;
+            transition: 0.3s ease-in-out;
+        }
+    }
+  
+}
