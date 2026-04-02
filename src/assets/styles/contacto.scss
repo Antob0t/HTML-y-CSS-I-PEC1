@@ -32,7 +32,7 @@
 
     &__subtitulo {
         text-align: center;
-        color: lighten($color-text, 20%);
+        color: $color-text;
         margin-bottom: 20px;
         font-size: 1rem;
     }

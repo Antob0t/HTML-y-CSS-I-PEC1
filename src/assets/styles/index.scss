@@ -203,11 +203,14 @@
         margin-bottom: 1rem;
     }
     &__boton{
-        margin-bottom: 1rem;
-        border: 2px solid $color-text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 2rem;
+        border: 2px solid $color-primary;
         border-radius: 30px;
         padding: 4px 8px;
-        width: fit-content;
     }
     &__telefono, &__email{
         margin-bottom: 1rem;
@@ -222,7 +225,7 @@
         text-align: center;
         &:hover{
             cursor: pointer;
-            color: $color-secondary;
+            color: $color-primary;
             font-weight: $font-weight-title;
         }
     }
@@ -235,6 +238,8 @@
         font-weight: $font-weight-title;
         color: $color-primary;
         margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid $color-primary;
     }
     &__horario{
         padding: 4px 8px;

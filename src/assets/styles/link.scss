@@ -44,7 +44,7 @@
 
     &__subtitulo {
         text-align: center;
-        color: $color-secondary;
+        color: $color-text;
         margin-bottom: 20px;
         font-size: 1.1rem;
         font-family: $font-title;
@@ -92,7 +92,6 @@
             padding: 0.5rem 1.5rem;
             border: 2px solid $color-primary;
             border-radius: 50px;
-            transition: all 0.3s ease;
             text-align: center;
 
             i {
@@ -102,7 +101,6 @@
             &:hover {
                 background-color: $color-primary;
                 color: $color-background;
-                transform: translateY(-2px);
             }
         }
     }

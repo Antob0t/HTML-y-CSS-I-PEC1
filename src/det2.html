@@ -8,6 +8,7 @@
     <meta name="keywords" content="Futomaki Vegetal, sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="/src/assets/styles/main.scss">
+    <link rel="icon" type="png" href="/src/assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <main>
        <section class="detalle__encabezado">
             <div class="detalle__retroceso">
-                <a class="detalle__enlace" href="/src/index.html"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="detalle__enlace" href="/src/index.html" aria-label="Volver a la página principal"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></a>
             </div>
             <h1 class="detalle__titulo">Futomaki Vegetal</h1>
             <div class="detalle__espaciador"></div>
@@ -36,8 +37,8 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next" arial-label="Siguiente imagen"></div>
+                    <div class="swiper-button-prev" arial-label="Imagen anterior"></div>
                     </div>
         </section>
         <section class="detalle__descripcion">
@@ -60,14 +61,14 @@
         <section class="detalle__alergenos">
             <h3 class="detalle__alergenos--titulo">Alérgenos</h3>
             <ul class="detalle__alergenolista">
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-carrot" title="Zanahoria" alt="Zanahoria"></i></li>
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-seedling" title="Sesamo" alt="Sesamo"></i></li>
+                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-carrot" title="Zanahoria" arial-label="Zanahoria"></i></li>
+                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-seedling" title="Sesamo" arial-label="Sesamo"></i></li>
             </ul>
         </section>
         <section class="detalle__preparacion">
             <h3 class="detalle__preparacion--titulo">Preparación</h3>
             <p class="detalle__preparacion--texto">Para montarlo, se coloca una hoja completa de alga <i>nori</i> sobre la esterilla de bambú <i>(makisu)</i> y se extiende una capa de arroz dejando un margen en el borde superior. Se disponen los ingredientes del relleno de forma organizada en el centro; la clave está en el enrollado, que debe hacerse con firmeza para compactar el gran volumen de ingredientes sin romper el alga. Finalmente, se corta en rodajas de unos 2 centímetros de grosor con un cuchillo muy afilado y humedecido.</p>
-            <iframe class="detalle__video" src="https://www.youtube.com/embed/5sB7qU-_Y6Y?si=Mx6mW2iNq8mj5kIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="detalle__video" src="https://www.youtube.com/embed/5sB7qU-_Y6Y?si=Mx6mW2iNq8mj5kIy" title="Video de preparacion de Futomaki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <script type="module" src="/src/assets/scripts/main.js"></script>
     </main>
 </body>

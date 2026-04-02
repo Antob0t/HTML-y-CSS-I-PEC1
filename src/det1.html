@@ -8,6 +8,7 @@
     <meta name="keywords" content="Sando Dragon Roll, sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="/src/assets/styles/main.scss">
+    <link rel="icon" type="png" href="/src/assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <main class="detalle">
         <section class="detalle__encabezado">
             <div class="detalle__retroceso">
-                <a class="detalle__enlace" href="/src/index.html"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="detalle__enlace" href="/src/index.html" aria-label="Volver a la página principal"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></a>
             </div>
             <h1 class="detalle__titulo">Sando Dragon Roll</h1>
             <div class="detalle__espaciador"></div>
@@ -36,8 +37,8 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next" arial-label="Siguiente imagen"></div>
+                    <div class="swiper-button-prev" arial-label="Imagen anterior"></div>
                     </div>
         </section>
         <section class="detalle__descripcion">
@@ -59,16 +60,16 @@
         <section class="detalle__alergenos">
             <h3 class="detalle__alergenos--titulo">Alérgenos</h3>
             <ul class="detalle__alergenolista">
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-fish" title="Pescado" alt="Pescado"></i></li>
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-wheat-awn-circle-exclamation" title="Gluten" alt="Gluten"></i></p></li>
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-seedling" title="Vegetales" alt="Vegetales"></i></li>
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-egg" title="Huevo" alt="Huevo"></i></li>
+                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-fish" title="Pescado" aria-label="Pescado"></i></li>
+                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-wheat-awn-circle-exclamation" arial-label="Gluten" alt="Gluten"></i></li>
+                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-seedling" title="Vegetales" arial-label="Vegetales"></i></li>
+                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-egg" title="Huevo" arial-label="Huevo"></i></li>
             </ul>
         </section>
         <section class="detalle__preparacion">
             <h3 class="detalle__preparacion--titulo">Preparación</h3>
             <p class="detalle__preparacion--texto">Se comienza preparando un <i>uramaki</i> clásico colocando el arroz sobre el alga y dándole la vuelta para que el alga quede hacia arriba. Se rellena con el langostino en tempura y el pepino, y se enrolla firmemente. El paso artístico ocurre al final: se cubre la parte superior del rollo con láminas de aguacate dispuestas como escamas, se presiona ligeramente con la esterilla cubierta de film transparente para que se adhieran, se corta y se decora con la salsa dulce y las huevas.</p>
-            <iframe class="detalle__video" src="https://www.youtube.com/embed/AfObSQU2KS4?si=MSmF9uAH79OFbhww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="detalle__video" src="https://www.youtube.com/embed/AfObSQU2KS4?si=MSmF9uAH79OFbhww" title="Video de preparacion de Uramaki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <script type="module" src="/src/assets/scripts/main.js"></script>
     </main>
 </body>
