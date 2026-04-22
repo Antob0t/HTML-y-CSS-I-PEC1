@@ -10,13 +10,6 @@
         background-color: $color-background;
         padding-top: 30px;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        background-color: $color-background;
-        padding-top: 30px;
-        width: 100%;
         @media screen and (min-width: $mq-tablet) {
             flex: 0 0 150px;
             position: sticky;
@@ -41,6 +34,11 @@
         padding: 0.5rem 1rem;
         border-radius: 4px;
         flex: 1;
+        &:hover{
+            transition: 0.3s ease-in-out;
+            transform: translateX(-5px);
+            cursor: pointer;
+        }
     }
     &__espaciador{
         flex: 1;
@@ -99,9 +97,8 @@
     }
 
     &__figura {
-        flex: 0 0 300px;
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        max-width: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -118,8 +115,6 @@
         aspect-ratio: 1 / 1;
         object-fit: cover;
         object-position: center;
-        @media screen and (min-width: $mq-tablet) {
-        }
 
     }
 
@@ -206,25 +201,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid $color-primary;
-        border-radius: 20px;
-        @media screen and (min-width: $mq-tablet) {
-            border-radius: 30px;
-        }
-        :hover{
-            background-color: $color-primary;
-            color: $color-background;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-        }
+        margin-top: 2rem;
 
         &--enlace{
             text-decoration: none;
             color: $color-primary;
             font-weight: bold;
             padding: 1rem 1.5rem;
-            border-radius:20px;
-            
+             border: 2px solid $color-primary;
+            border-radius: 30px;
+
+            &:hover{
+            background-color: $color-primary;
+            color: $color-background;
+            transition: 0.3s ease-in-out;
+            transform: translateY(3px);
+            cursor: pointer;
+        }
         }
     }
 }

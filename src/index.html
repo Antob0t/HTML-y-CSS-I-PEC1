@@ -8,35 +8,40 @@
     <meta name="keywords" content="sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="./assets/styles/main.scss">
-    <link rel="icon" type="png" href="/src/assets/images/favicon.png">
+    <link rel="icon" type="svg" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   <body>
       <include src="./layouts/_nav.html"></include>
-    <main>
+    <main">
       <div class="encabezado">
-        <h1 class="encabezado__titulo">SAND<span class="encabezado__titulo--o">O</span></h1>
+        <h1 class="encabezado__titulo">SAND<svg class="encabezado__titulo--o" viewBox="0 0 100 100">
+        <circle class="circulo__trazo" cx="50" cy="50" r="40" />
+        </svg>
+      </h1>
         <figure class="encabezado__figura">
-          <img class="encabezado__imagen" src="./assets/images/portada.png" alt="Imagen de sushi">
+          <img class="encabezado__imagen" src="/src/assets/images/portada.png?width=600&quality=7" 
+            srcset="/src/assets/images/portada.png?as=avif&width=600&quality=80 1x, /src/assets/images/portada.png?as=avif&width=1200&quality=60 2x"
+          alt="Imagen de platos de sushi">
         </figure>
-        <h2 class="encabezado__subtitulo">sushi</h1>
+        <h2 class="encabezado__subtitulo">sushi</h2>
       </div>
       <section class="destacados">
         <h2 class="destacados__titulo">Nuestros destacados</h2>
         <p class="destacados__descripcion">En Sando <i>Sushi</i>, ofrecemos una amplia variedad de platos de sushi, desde los clásicos nigiri y maki hasta nuestras especialidades exclusivas. Cada plato está preparado con ingredientes frescos y de alta calidad para garantizar una experiencia culinaria excepcional.</p>
         <div class="destacados__galeria">
           <figure class="destacados__plato">
-            <img class="destacados__imagen" src="./assets/images/plato1.png" alt="Imagen de un chico sujerando un plato de sando dragon roll con palillos asiáticos">
+            <img class="destacados__imagen" src="./assets/images/plato1.png?as=avif&width=600&quality=75" alt="Imagen de un chico sujerando un plato de sando dragon roll con palillos asiáticos">
             <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det1.html">Sando Dragon Roll</a></figcaption>
           </figure>
           <figure class="destacados__plato">
-            <img class="destacados__imagen" src="./assets/images/plato2.png" alt="Imagen de un plato de futomaki vegetal con aguacate, pepino y zanahoria encima de una silla roja">
+            <img class="destacados__imagen" src="./assets/images/plato2.png?as=avif&width=600&quality=75" alt="Imagen de un plato de futomaki vegetal con aguacate, pepino y zanahoria encima de una silla roja">
             <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det2.html">Futomaki Vegetal</a></figcaption>
           </figure>
           <figure class="destacados__plato">
-            <img class="destacados__imagen" src="./assets/images/plato3.png" alt="Imagen de una chica sujetando un plato de temaki de langostino en tempura con palillos asiáticos">
+            <img class="destacados__imagen" src="./assets/images/plato3.png?as=avif&width=600&quality=75" alt="Imagen de una chica sujetando un plato de temaki de langostino en tempura con palillos asiáticos">
             <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det3.html">Temaki de Langostino</a></figcaption>
           </figure>
         </div>    
@@ -58,7 +63,7 @@
           </dl>
         </div>
         <figure class="contacto__restaurante">
-          <img class="contacto__imagen" src="./assets/images/restaurante.png" alt="Imagen del restaurante">
+          <img class="contacto__imagen" src="./assets/images/restaurante.png?as=avif&width=600&quality=75" alt="Imagen del restaurante">
         </figure>
       </section>
     </main>

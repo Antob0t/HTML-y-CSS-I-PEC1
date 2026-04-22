@@ -81,19 +81,11 @@
         gap: 2rem;
         margin-top: 1.5rem;
         margin-inline: auto;
-        border: 3px solid $color-background;
-        padding: 5px 10px;
-        border-radius: 30px;
         width: 120px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &:hover{
-            background-color: $color-background;
-            color: $color-primary;
-            transition: 0.3s ease-in-out;
-        }
         @media screen and (min-width: $mq-tablet ) {
             margin-top: 0;
             width: 150px;
@@ -106,6 +98,9 @@
         color: $color-background;
         font-size: $font-size-body;
         width: 100%;
+        border: 3px solid $color-background;
+        padding: 5px 10px;
+        border-radius: 30px;
         @media screen and (min-width: $mq-tablet ) {
             font-size: 1.2rem;
             width: 100%;
@@ -114,7 +109,9 @@
             &:hover{
             color: $color-primary;
             transition: 0.3s ease-in-out;
+            transform: scale(1.05);
+            background-color: $color-background;
         }
     }
   
-}
+}   

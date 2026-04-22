@@ -17,10 +17,16 @@
     &__logo{
         width: 150px;
         padding: 10px 0;
-        
+        display: inline-block;
+
         @media screen and (min-width: $mq-tablet ) {
             width: 200px;
             align-content: center;
+        }
+        &:hover{
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            transform: scale(1.05);
         }
     }
 
@@ -38,7 +44,7 @@
         }
     }
     &__enlace{
-        font-size: 18px;
+        font-size: $font-size-body;
         text-decoration: none;
         color: $color-primary;
         font-size: $font-size-body;
@@ -46,11 +52,13 @@
         border: 2px solid $color-primary;
         border-radius: 30px;
         padding: 3px 8px;
+        display: inline-block;
         
         &:hover{
             color: $color-background;
             background-color: $color-primary;
             transition: 0.3s ease-in-out;
+            transform: scale(1.05);
             cursor: pointer;
         }
         

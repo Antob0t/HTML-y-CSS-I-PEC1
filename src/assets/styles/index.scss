@@ -10,17 +10,19 @@
     color: $color-primary;
     font-family: $font-title;
     text-align: center;
-    background-color: $color-background;
     position: relative;
     height: 600px;
     overflow: hidden;
 
     &__titulo{
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 5rem;
         font-weight: $font-weight-title;
         margin-bottom: 1rem;
-         width: 100%;
+        width: 100%;
         max-width: 600px;
         top: 35%;
         left: 40%;
@@ -32,7 +34,32 @@
             left: 40%;
         }
         &--o{
+            fill: none;
+            display: inline-block;
+            width: 70px;
             color: $color-secondary;
+            @media screen and (min-width: $mq-tablet ) {
+                width: 140px;
+            }
+            circle{
+                stroke: $color-secondary;
+                stroke-width: 20px;
+                stroke-linecap: round;
+                stroke-dasharray: 251;
+                stroke-dashoffset: 251;
+                animation: dibujar 3s ease-in-out forwards;
+            }
+        }
+            @keyframes dibujar {
+            0% {
+                stroke-dashoffset: 251;
+            }
+            50%{
+                stroke-dashoffset: 100;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
         }
     }
 
@@ -76,8 +103,16 @@
     font-family: $font-body;
     border-radius: 50px;
     margin-bottom: 30px;
-    margin-top: 30px;
-    
+    margin-top: 40px;
+    width: 100%;
+        @media screen and (min-width: $mq-tablet ) {
+            padding: 3rem;
+            padding-bottom: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
     &__titulo{
         font-family: $font-title;
         font-size: $font-size-title;
@@ -127,7 +162,7 @@
         max-height: 400px;
         object-fit: cover;
         object-position: center;
-        border-radius: 30px;
+        border-radius: 200px;
          @media screen and (min-width: $mq-tablet ) {
             max-width: 400px;
         }
@@ -142,37 +177,28 @@
         bottom: 6px;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: $color-background;
-        padding: 0.5rem 1rem;
         border-radius: 40px;
-        border: 2px solid $color-primary;
         font-size: $font-size-body;
         font-weight: $font-weight-body;
-        &:hover{
-            background-color: $color-primary;
-        }
-            @media screen and (min-width: $mq-tablet ) {
-                bottom: -20px;
-            }
-            @media screen and (min-width: $mq-tablet ) {
-                bottom: -20px;
-            }
-
-        
     }
     &__enlace{
         text-decoration: none;
+        background-color: $color-background;
         color: $color-primary;
         font-weight: $font-weight-title;
         border-radius: 30px;
-        padding: 3px 8px;
+        padding: 5px 8px;
         display: inline-block;
         text-align: center;
         width: 100%;
+        border: 2px solid $color-primary;
         &:hover{
             cursor: pointer;
+            transition: 0.3s ease-in-out;
+            transform: scale(1.05);
+            background-color: $color-primary;
             color: $color-background;
-            font-weight: $font-weight-title;
+            
         }
     }
 }
@@ -208,9 +234,6 @@
         align-items: center;
         align-content: center;
         margin-bottom: 2rem;
-        border: 2px solid $color-primary;
-        border-radius: 30px;
-        padding: 4px 8px;
     }
     &__telefono, &__email{
         margin-bottom: 1rem;
@@ -220,6 +243,7 @@
         color: $color-text;
         font-weight: $font-weight-title;
         border-radius: 30px;
+        border: 2px solid $color-primary;
         padding: 4px 8px;
         display: inline-block;
         text-align: center;
@@ -227,6 +251,8 @@
             cursor: pointer;
             color: $color-primary;
             font-weight: $font-weight-title;
+            transition: 0.3s ease-in-out;
+            transform: scale(1.05);
         }
     }
     &__detalles {
@@ -237,7 +263,7 @@
         font-size: $font-size-subtitle;
         font-weight: $font-weight-title;
         color: $color-primary;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         margin-top: 1rem;
         border-bottom: 2px solid $color-primary;
     }
@@ -250,13 +276,23 @@
 
     &__restaurante{
         margin-top: 2rem;
+        margin-bottom: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        transition: clip-path 0.5s ease-in-out, transform 0.9s ease;
+
+        &:hover {
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            transform: scale(1.03);
+            cursor: crosshair;
+        }
     }
     &__imagen{
         width: 100%;
         max-width: 600px;
-        border-radius: 30px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
     }
 }

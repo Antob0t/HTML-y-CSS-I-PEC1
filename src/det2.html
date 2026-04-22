@@ -8,7 +8,7 @@
     <meta name="keywords" content="Futomaki Vegetal, sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="/src/assets/styles/main.scss">
-    <link rel="icon" type="png" href="/src/assets/images/favicon.png">
+    <link rel="icon" type="svg" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -27,18 +27,30 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                        <img src="/src/assets/images/vegetal1.png" alt="Futomaki Vegetal detalle">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/src/assets/images/vegetal1.png?as=avif&width=500&height=500&fit=cover&quality=70">
+                                <source media="(min-width: 769px)" srcset="/src/assets/images/vegetal1.png?as=avif&width=1000&quality=80">
+                                <img src="/src/assets/images/vegetal1.png?width=800" alt="Futomaki Vegetal detalle">
+                            </picture>
                         </div>
                         <div class="swiper-slide">
-                        <img src="/src/assets/images/vegetal2.png" alt="Preparación del arroz para el futomaki vegetal">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/src/assets/images/vegetal2.png?as=avif&width=500&height=500&fit=cover&quality=70">
+                                <source media="(min-width: 769px)" srcset="/src/assets/images/vegetal2.png?as=avif&width=1000&quality=80">
+                                <img src="/src/assets/images/vegetal2.png?width=800" alt="Futomaki Vegetal preparación">
+                            </picture>
                         </div>
                         <div class="swiper-slide">
-                        <img src="/src/assets/images/vegetal3.png" alt="Emplatado final de Futomaki Vegetal">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/src/assets/images/vegetal3.png?as=avif&width=500&height=500&fit=cover&quality=70">
+                                <source media="(min-width: 769px)" srcset="/src/assets/images/vegetal3.png?as=avif&width=1000&quality=80">
+                                <img src="/src/assets/images/vegetal3.png?width=800" alt="Futomaki Vegetal emplatado">
+                            </picture>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next" arial-label="Siguiente imagen"></div>
-                    <div class="swiper-button-prev" arial-label="Imagen anterior"></div>
+                    <div class="swiper-button-next" aria-label="Siguiente imagen"></div>
+                    <div class="swiper-button-prev" aria-label="Imagen anterior"></div>
                     </div>
         </section>
         <section class="detalle__descripcion">
@@ -61,8 +73,8 @@
         <section class="detalle__alergenos">
             <h3 class="detalle__alergenos--titulo">Alérgenos</h3>
             <ul class="detalle__alergenolista">
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-carrot" title="Zanahoria" arial-label="Zanahoria"></i></li>
-                <li class="detalle__alergeno"><i class="detalle_icono fa-solid fa-seedling" title="Sesamo" arial-label="Sesamo"></i></li>
+                <li class="detalle__alergeno" data-name="Zanahoria"><i class="detalle_icono fa-solid fa-carrot" title="Zanahoria" aria-label="Zanahoria"></i></li>
+                <li class="detalle__alergeno" data-name="Sesamo"><i class="detalle_icono fa-solid fa-seedling" title="Sesamo" aria-label="Sesamo"></i></li>
             </ul>
         </section>
         <section class="detalle__preparacion">
