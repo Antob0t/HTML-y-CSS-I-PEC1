@@ -15,7 +15,7 @@
   </head>
   <body>
       <include src="./layouts/_nav.html"></include>
-    <main">
+    <main role="main">
       <div class="encabezado">
         <h1 class="encabezado__titulo">SAND<svg class="encabezado__titulo--o" viewBox="0 0 100 100">
         <circle class="circulo__trazo" cx="50" cy="50" r="40" />
@@ -47,8 +47,9 @@
         </div>    
       </section>
       <section class="contacto">
+        <div class="contacto__informacion">
+          <h2 class="contacto__titulo">Restaurante</h2>
           <dl class="contacto__detalles">
-            <h2 class="contacto__titulo">Restaurante</h2>
             <dt class="contacto__subtitulo">Dirección:</dt>
             <dd class="contacto__direccion">Calle Fuencarral, 123, Madrid</dd>
             <dd class="contacto__boton"><a class="contacto__enlace" href="https://maps.google.com/?q=Calle+Fuencarral,+123,+Madrid" target="_blank">Ver en mapa</a></dd>
