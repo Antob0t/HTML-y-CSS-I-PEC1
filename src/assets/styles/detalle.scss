@@ -23,6 +23,13 @@
         color: $color-primary;
         text-decoration: none;
     }
+    &__icono{
+        &:hover{
+            transition: 0.3s ease-in-out;
+            transform: translateX(-5px);
+            cursor: pointer;
+        }
+    }
     &__fotos{
         display: flex;
         align-items: center;
