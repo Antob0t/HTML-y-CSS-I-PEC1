@@ -8,7 +8,7 @@
     <meta name="keywords" content="sushi, restaurante de sushi, Madrid, comida japonesa, Sando Sushi">
     <meta name="author" content="Antolín Murcia">
     <link rel="stylesheet" href="./assets/styles/main.scss">
-    <link rel="icon" type="svg" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
+    <link rel="icon" type="image/webp" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -34,6 +34,7 @@
         <div class="destacados__galeria">
           <figure class="destacados__plato">
             <img class="destacados__imagen" 
+              loading="lazy"
               src="./assets/images/plato1.png?as=avif&width=800&quality=75"
               srcset="./assets/images/plato1.png?as=avif&width=400&quality=70 400w,
                       ./assets/images/plato1.png?as=avif&width=800&quality=75 800w,
@@ -44,6 +45,7 @@
           </figure>
           <figure class="destacados__plato">
             <img class="destacados__imagen" 
+              loading="lazy"
               src="./assets/images/plato2.png?as=avif&width=800&quality=75"
               srcset="./assets/images/plato2.png?as=avif&width=400&quality=70 400w,
                       ./assets/images/plato2.png?as=avif&width=800&quality=75 800w,
@@ -53,7 +55,8 @@
             <figcaption class="destacados__descripcion--plato"><a class="destacados__enlace" href="/src/det2.html">Futomaki Vegetal</a></figcaption>
           </figure>
           <figure class="destacados__plato">
-            <img class="destacados__imagen" 
+            <img class="destacados__imagen"
+                loading="lazy" 
                 src="./assets/images/plato3.png?as=avif&width=800&quality=75"
                 srcset="./assets/images/plato3.png?as=avif&width=400&quality=70 400w,
                         ./assets/images/plato3.png?as=avif&width=800&quality=75 800w,
@@ -82,7 +85,8 @@
           </dl>
         </div>
         <figure class="contacto__restaurante">
-          <img class="contacto__imagen" 
+          <img class="contacto__imagen"
+              loading="lazy" 
               src="./assets/images/restaurante.png?as=avif&width=800&quality=75" 
               srcset="./assets/images/restaurante.png?as=avif&width=400&quality=70 400w,
                       ./assets/images/restaurante.png?as=avif&width=800&quality=75 800w,
