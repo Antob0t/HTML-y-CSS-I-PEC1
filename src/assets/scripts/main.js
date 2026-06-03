@@ -1,14 +1,16 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Lazy } from 'swiper/modules';
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination, Autoplay],
+  modules: [Navigation, Pagination, Lazy],
   loop: true,
   speed: 1000,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
+  
+  lazy: {
+    loadPrevNext: true,
   },
+  preloadImages: false,
+  watchSlidesProgress: true,
 
   pagination: {
     el: '.swiper-pagination',
