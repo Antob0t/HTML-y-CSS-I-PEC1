@@ -1,3 +1,4 @@
+import 'lite-youtube-embed';
 import Swiper from 'swiper';
 import { Navigation, Pagination, Lazy } from 'swiper/modules';
 

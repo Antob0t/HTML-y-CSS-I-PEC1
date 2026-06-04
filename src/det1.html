@@ -11,7 +11,9 @@
     <link rel="icon" type="image/webp" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"></noscript>
 </head>
 <body>
 <include src="layouts/_nav.html"></include>
@@ -30,21 +32,21 @@
                             <picture>
                                 <source media="(max-width: 768px)" srcset="/src/assets/images/roll1.png?as=avif&width=500&height=500&fit=cover&quality=70">
                                 <source media="(min-width: 769px)" srcset="/src/assets/images/roll1.png?as=avif&width=1000&quality=80">
-                                <img src="/src/assets/images/roll1.png?width=800" alt="Sando Dragon Roll detallado">
+                                <img width="1000" height="1000" src="/src/assets/images/roll1.png?width=800" alt="Sando Dragon Roll detallado">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="/src/assets/images/roll2.png?as=avif&width=500&height=500&fit=cover&quality=70">
                                 <source media="(min-width: 769px)" srcset="/src/assets/images/roll2.png?as=avif&width=1000&quality=80">
-                                <img loading="lazy" src="/src/assets/images/roll2.png?width=800" alt="Preparación del arroz para Sando">
+                                <img width="1000" height="1000" loading="lazy" src="/src/assets/images/roll2.png?width=800" alt="Preparación del arroz para Sando">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="/src/assets/images/roll3.png?as=avif&width=500&height=500&fit=cover&quality=70">
                                 <source media="(min-width: 769px)" srcset="/src/assets/images/roll3.png?as=avif&width=1000&quality=80">
-                                <img loading="lazy" src="/src/assets/images/roll3.png?width=800" alt="Emplatado final de Sando Dragon Roll">
+                                <img width="1000" height="1000" loading="lazy" src="/src/assets/images/roll3.png?width=800" alt="Emplatado final de Sando Dragon Roll">
                             </picture>
                         </div>
                     </div>
@@ -81,9 +83,12 @@
         <section class="detalle__preparacion">
             <h3 class="detalle__preparacion--titulo">Preparación</h3>
             <p class="detalle__preparacion--texto">Se comienza preparando un <i>uramaki</i> clásico colocando el arroz sobre el alga y dándole la vuelta para que el alga quede hacia arriba. Se rellena con el langostino en tempura y el pepino, y se enrolla firmemente. El paso artístico ocurre al final: se cubre la parte superior del rollo con láminas de aguacate dispuestas como escamas, se presiona ligeramente con la esterilla cubierta de film transparente para que se adhieran, se corta y se decora con la salsa dulce y las huevas.</p>
-            <iframe loading="lazy" class="detalle__video" src="https://www.youtube.com/embed/AfObSQU2KS4?si=MSmF9uAH79OFbhww" title="Video de preparacion de Uramaki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <script type="module" src="/src/assets/scripts/main.js" defer></script>
+            <lite-youtube class="detalle__video" videoid="AfObSQU2KS4" 
+                playlabel="Reproducir vídeo de preparación de Uramaki">
+            </lite-youtube>
+        </section>
     </main>
+<script type="module" src="/src/assets/scripts/main.js" defer></script>
 </body>
 <include src="layouts/_footer.html"></include>
 </html>

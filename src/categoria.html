@@ -11,7 +11,9 @@
     <link rel="icon" type="image/webp" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"></noscript>
 </head>
 <body>
 <include src="layouts/_nav.html"></include>
@@ -31,7 +33,8 @@
                             <li class="carta__etiqueta carta__etiqueta--ultima">Especialidad de la casa</li>
                     </ul>
                     <figure class="carta__figura">
-                        <img class="carta__imagen" src="/src/assets/images/carta1.png?as=webp&width=400&quality=70"
+                        <img fetchpriority="high" class="carta__imagen" src="/src/assets/images/carta1.png?as=webp&width=400&quality=70"
+                            width="250" height="250"
                             srcset="/src/assets/images/carta1.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta1.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta1.png?as=webp&width=1200&quality=80 1200w"
@@ -56,6 +59,7 @@
                     </ul>
                     <figure class="carta__figura">
                          <img class="carta__imagen" src="/src/assets/images/carta2.png?as=webp&width=400&quality=70"
+                            width="250" height="250"
                             srcset="/src/assets/images/carta2.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta2.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta2.png?as=webp&width=1200&quality=80 1200w"
@@ -80,6 +84,7 @@
                     </ul>
                     <figure class="carta__figura">
                          <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta3.png?as=webp&width=400&quality=70"
+                            width="250" height="250"
                             srcset="/src/assets/images/carta3.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta3.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta3.png?as=webp&width=1200&quality=80 1200w"
@@ -104,6 +109,7 @@
                     </ul>
                     <figure class="carta__figura">
                         <img class="carta__imagen" loading="lazy"  src="/src/assets/images/carta4.png?as=webp&width=600&quality=70"
+                            width="250" height="250"
                             srcset="/src/assets/images/carta4.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta4.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta4.png?as=webp&width=1200&quality=80 1200w"
@@ -127,6 +133,7 @@
                     </ul>
                     <figure class="carta__figura">
                         <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta5.png?as=webp&width=600&quality=70"
+                            width="250" height="250"
                             srcset="/src/assets/images/carta5.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta5.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta5.png?as=webp&width=1200&quality=80 1200w"
@@ -149,7 +156,8 @@
                         <li class="carta__etiqueta carta__etiqueta--ultima">Picante</li>
                     </ul>
                     <figure class="carta__figura">
-                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta6.png?as=webp&width=600&quality=70" 
+                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta6.png?as=webp&width=600&quality=70"
+                            width="250" height="250" 
                             srcset="/src/assets/images/carta6.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta6.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta6.png?as=webp&width=1200&quality=80 1200w"
@@ -172,7 +180,8 @@
                         <li class="carta__etiqueta carta__etiqueta--ultima">Tradicional</li>
                     </ul>
                     <figure class="carta__figura">
-                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta7.png?as=webp&width=600&quality=70" 
+                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta7.png?as=webp&width=600&quality=70"
+                            width="250" height="250" 
                             srcset="/src/assets/images/carta7.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta7.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta7.png?as=webp&width=1200&quality=80 1200w"
@@ -195,7 +204,8 @@
                         <li class="carta__etiqueta carta__etiqueta--ultima">Especialidad</li>
                     </ul>
                     <figure class="carta__figura">
-                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta8.png?as=webp&width=600&quality=70" 
+                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta8.png?as=webp&width=600&quality=70"
+                            width="250" height="250" 
                             srcset="/src/assets/images/carta8.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta8.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta8.png?as=webp&width=1200&quality=80 1200w"
@@ -218,7 +228,8 @@
                             <li class="carta__etiqueta carta__etiqueta--ultima">Tradicional</li>
                     </ul>
                     <figure class="carta__figura">
-                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta9.png?as=webp&width=600&quality=70" 
+                        <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta9.png?as=webp&width=600&quality=70"
+                            width="250" height="250" 
                             srcset="/src/assets/images/carta9.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta9.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta9.png?as=webp&width=1200&quality=80 1200w"
@@ -242,6 +253,7 @@
                     </ul>
                     <figure class="carta__figura">
                         <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta10.png?as=webp&width=600&quality=75" 
+                            width="250" height="250"
                             srcset="/src/assets/images/carta10.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta10.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta10.png?as=webp&width=1200&quality=80 1200w"
@@ -265,6 +277,7 @@
                     </ul>
                     <figure class="carta__figura">
                         <img class="carta__imagen" loading="lazy" src="/src/assets/images/carta11.png?as=webp&width=600&quality=75" 
+                            width="250" height="250"
                             srcset="/src/assets/images/carta11.png?as=webp&width=400&quality=60 400w,
                             /src/assets/images/carta11.png?as=webp&width=800&quality=70 800w,
                             /src/assets/images/carta11.png?as=webp&width=1200&quality=80 1200w"

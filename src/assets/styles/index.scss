@@ -47,6 +47,7 @@
                 stroke-linecap: round;
                 stroke-dasharray: 251;
                 stroke-dashoffset: 251;
+                will-change: stroke-dashoffset;
                 animation: dibujar 3s ease-in-out forwards;
             }
         }

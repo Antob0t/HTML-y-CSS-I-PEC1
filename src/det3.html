@@ -11,7 +11,9 @@
     <link rel="icon" type="image/webp" href="/src/assets/images/favicon.svg?as=webp&width=32&lossless=true">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"></noscript>
 </head>
 <body>
 <include src="layouts/_nav.html"></include>
@@ -30,21 +32,21 @@
                             <picture>
                                 <source media="(max-width: 768px)" srcset="/src/assets/images/temaki1.png?as=avif&width=500&height=500&fit=cover&quality=70">
                                 <source media="(min-width: 769px)" srcset="/src/assets/images/temaki1.png?as=avif&width=1000&quality=80">
-                                <img src="/src/assets/images/temaki1.png?width=800" alt="Temaki de langostino en Tempura detalle">
+                                <img width="1000" height="1000" src="/src/assets/images/temaki1.png?width=800" alt="Temaki de langostino en Tempura detalle">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="/src/assets/images/temaki2.png?as=avif&width=500&height=500&fit=cover&quality=70">
                                 <source media="(min-width: 769px)" srcset="/src/assets/images/temaki2.png?as=avif&width=1000&quality=80">
-                                <img loading="lazy" src="/src/assets/images/temaki2.png?width=800" alt="Preparación del arroz para Temaki">
+                                <img width="1000" height="1000" loading="lazy" src="/src/assets/images/temaki2.png?width=800" alt="Preparación del arroz para Temaki">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="/src/assets/images/temaki3.png?as=avif&width=500&height=500&fit=cover&quality=70">
                                 <source media="(min-width: 769px)" srcset="/src/assets/images/temaki3.png?as=avif&width=1000&quality=80">
-                                <img loading="lazy" src="/src/assets/images/temaki3.png?width=800" alt="Emplatado final de Temaki de langostino en Tempura">
+                                <img width="1000" height="1000" loading="lazy" src="/src/assets/images/temaki3.png?width=800" alt="Emplatado final de Temaki de langostino en Tempura">
                             </picture>
                         </div>
                     </div>
@@ -81,9 +83,12 @@
         <section class="detalle__preparacion">
             <h3 class="detalle__preparacion--titulo">Preparación</h3>
             <p class="detalle__preparacion--texto">A diferencia de los rollos anteriores, aquí no se utiliza la esterilla de bambú. Se coloca la media hoja de <i>nori</i> sobre la palma de la mano y se extiende una capa fina de arroz en el extremo izquierdo. Sobre el arroz, se disponen los langostinos y el aguacate de forma diagonal, apuntando hacia la esquina superior. Con un movimiento firme de la mano, se enrolla el alga desde la esquina inferior izquierda hacia arriba a la derecha, formando un cono perfecto que se sella con un solo grano de arroz como si fuera pegamento.</p>
-            <iframe loading="lazy" lang="en" class="detalle__video" src="https://www.youtube.com/embed/Wppkpzc2G2E?si=wTkfk5NaeJN7VLkZ" title="Video de preparación de Temaki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <script type="module" src="/src/assets/scripts/main.js" defer></script>
+            <lite-youtube class="detalle__video" videoid="Wppkpzc2G2E" 
+                playlabel="Reproducir vídeo de preparación de Temaki">
+            </lite-youtube>
+        </section>
     </main>
+<script type="module" src="/src/assets/scripts/main.js" defer></script>
 </body>
 <include src="layouts/_footer.html"></include>
 </html>

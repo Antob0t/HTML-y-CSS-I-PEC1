@@ -1,2 +1,13 @@
-@import "/node_modules/swiper/swiper-bundle.css";
+@import "/node_modules/swiper/swiper.css";
+@import "/node_modules/swiper/modules/navigation.css";
+@import "/node_modules/swiper/modules/pagination.css";
 @import "/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "/node_modules/lite-youtube-embed/src/lite-yt-embed.css";
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2') format('woff2');
+}
